@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+Ekstrakcja opinii o produkcie
+{% endblock %}
+
+{% block content %}
+<form class="container" method="post">
+    <div class="row">
+        <div class="col d-flex justify-content-end align-items-baseline">
+            <label for="product_id" class="form-label">Podaj kod produktu</label>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" name="product_id" id="product_id" placeholder="Kod produktu">
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary mb-3">Pobierz opinie</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
